@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-atp-red: #FF0000;
+  --color-atp-pink: #FF5CB2;
+  --color-atp-yellow: #FFCE00;
+  --color-atp-dark: #1a1a1a;
+  --color-atp-white: #FFFFFF;
+  --color-atp-off-white: #FAFAFA;
+
+  --font-futura: "futura-pt", "Futura", sans-serif;
+  --font-futura-condensed: "futura-pt-condensed", "Futura", sans-serif;
+}
+
+body {
+  font-family: var(--font-futura);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-atp-off-white);
+  color: var(--color-atp-dark);
+}
