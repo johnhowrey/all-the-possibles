@@ -8,8 +8,7 @@
   --color-atp-white: #FFFFFF;
   --color-atp-off-white: #FAFAFA;
 
-  --font-futura: "futura-pt", "Futura", sans-serif;
-  --font-futura-condensed: "futura-pt-condensed", "Futura", sans-serif;
+  --font-futura: "futura-pt", sans-serif;
 }
 
 body {
