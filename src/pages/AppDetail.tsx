@@ -100,13 +100,13 @@ export default function AppDetail() {
       </section>
 
       {/* Privacy */}
-      <section className="bg-white border-t border-gray-200">
+      <section id="privacy" className="bg-white border-t border-gray-200 scroll-mt-6">
         <div className="max-w-5xl mx-auto px-6 py-12">
           <h2 className="font-extrabold text-2xl uppercase tracking-wider text-atp-dark mb-2 font-futura">
             Privacy Policy
           </h2>
           <p className="text-sm text-gray-400 font-futura mb-6">
-            Effective: {app.privacy.effectiveDate}
+            Effective: {app.privacy.effectiveDate} · Draft — pending legal review
           </p>
           <p className="text-gray-700 font-futura text-lg mb-8 leading-relaxed">
             {app.privacy.summary}
@@ -129,6 +129,64 @@ export default function AppDetail() {
           </p>
         </div>
       </section>
+
+      {/* Terms */}
+      {app.terms && (
+        <section id="terms" className="bg-white border-t border-gray-200 scroll-mt-6">
+          <div className="max-w-5xl mx-auto px-6 py-12">
+            <h2 className="font-extrabold text-2xl uppercase tracking-wider text-atp-dark mb-2 font-futura">
+              Terms of Use
+            </h2>
+            <p className="text-sm text-gray-400 font-futura mb-6">
+              Effective: {app.terms.effectiveDate} · Draft — pending legal review
+            </p>
+            <p className="text-gray-700 font-futura text-lg mb-8 leading-relaxed">
+              {app.terms.summary}
+            </p>
+            <div className="space-y-6">
+              {app.terms.sections.map((section, i) => (
+                <div key={i}>
+                  <h3 className="font-bold text-lg text-atp-dark font-futura mb-2">
+                    {section.title}
+                  </h3>
+                  <p className="text-gray-600 font-futura leading-relaxed">
+                    {section.content}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Refund policy */}
+      {app.refundPolicy && (
+        <section id="refunds" className="bg-white border-t border-gray-200 scroll-mt-6">
+          <div className="max-w-5xl mx-auto px-6 py-12">
+            <h2 className="font-extrabold text-2xl uppercase tracking-wider text-atp-dark mb-2 font-futura">
+              Refund Policy
+            </h2>
+            <p className="text-sm text-gray-400 font-futura mb-6">
+              Effective: {app.refundPolicy.effectiveDate} · Draft — pending legal review
+            </p>
+            <p className="text-gray-700 font-futura text-lg mb-8 leading-relaxed">
+              {app.refundPolicy.summary}
+            </p>
+            <div className="space-y-6">
+              {app.refundPolicy.sections.map((section, i) => (
+                <div key={i}>
+                  <h3 className="font-bold text-lg text-atp-dark font-futura mb-2">
+                    {section.title}
+                  </h3>
+                  <p className="text-gray-600 font-futura leading-relaxed">
+                    {section.content}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Back link */}
       <div className="max-w-5xl mx-auto px-6 py-8">

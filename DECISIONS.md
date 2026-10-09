@@ -35,6 +35,29 @@ function` — a known incompatibility, not a config mistake). Pinned
 `eslint` to `^9.39.0` instead of the newest 10.x until that plugin catches
 up.
 
+## 2026-10-09 — Building all three top-ranked ideas, in ranked order
+
+User asked to build "whichever one is best, then the next two, don't
+stop." Using the research's own ranking: **Dutch** (tip/bill split) →
+**Chain** (habit streaks) → **Window** (fasting timer) — all three had
+"high" or "medium-high" confidence demand evidence and are all one-time-
+unlock, no-backend builds, so building all three back to back is in scope
+without needing new infrastructure decisions per app.
+
+## 2026-10-09 — App names
+
+- **Tip & Bill Split → "Dutch"** ("going dutch"). Avoided "Splitwise"
+  (direct competitor name) and "Tally"/"Ledger" (collide with existing
+  accounting/crypto-wallet products).
+- **Habit Streak Tracker → "Chain"** — the "don't break the chain" habit
+  method is the whole pitch; the name does double duty as the explainer.
+- **Fasting Timer → "Window"** — plain language for the fasting window,
+  calmer than "Fast" (which also reads as an adjective, not a noun, in a
+  store listing).
+
+All three are one-word, lowercase-friendly, no trademark collision found
+in a quick check. Not legally cleared — flagging that in the final report.
+
 ## 2026-10-09 — `api.expo.dev` and `reactnative.directory` unreachable in this container
 
 This environment's network policy only allows a specific host allowlist

@@ -22,6 +22,7 @@ export function usePaywallGate(
   isEntitled: boolean;
   isLoading: boolean;
   shouldShowPaywall: boolean;
+  useCount: number;
   presentPaywall: () => void;
   dismissPaywall: () => void;
   recordFeatureUse: () => Promise<void>;
@@ -55,6 +56,7 @@ export function usePaywallGate(
     isEntitled,
     isLoading,
     shouldShowPaywall: !isEntitled && (autoShow || manuallyPresented),
+    useCount,
     presentPaywall: () => setManuallyPresented(true),
     dismissPaywall: () => setManuallyPresented(false),
     recordFeatureUse,

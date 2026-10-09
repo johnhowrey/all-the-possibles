@@ -9,7 +9,11 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-safe-area-context": "*",
+    "expo-font": "*",
+    "@expo-google-fonts/fraunces": "*",
+    "@expo-google-fonts/archivo": "*"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
