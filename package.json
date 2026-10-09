@@ -3,11 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:rungs": "npm run dev -w apps/rungs",
+    "build:rungs": "npm run build -w apps/rungs",
+    "test:engine": "npm run test -w packages/engine"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",

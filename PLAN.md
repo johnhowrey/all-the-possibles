@@ -91,18 +91,18 @@ Free to play, with ads. One-time **"Remove Ads" purchase, proposed at $2.99**, n
 
 ### Phase 0 — Setup
 - [x] Confirm game concept with John
-- [ ] Set up npm workspaces, scaffold `packages/engine` and `apps/rungs`
-- [ ] `.env` / `keys.txt` wiring (gitignored), confirm no secrets committed
-- [ ] DECISIONS.md started
+- [x] Set up npm workspaces, scaffold `packages/engine` and `apps/rungs`
+- [x] `.env` / `keys.txt` wiring (gitignored), confirm no secrets committed
+- [x] DECISIONS.md started
 
 ### Phase 1 — Engine (`packages/engine`)
-- [ ] Word list ingestion + validator
-- [ ] Puzzle bank format + a handful of hand-curated/validated ladders to start
-- [ ] Daily puzzle selection (local date → puzzle index)
-- [ ] Par calculator (BFS shortest path between start/end over valid one-letter-swap words)
-- [ ] Stats/streak update logic
-- [ ] Share-card data model (pure data, no rendering)
-- [ ] Unit tests for all of the above
+- [x] Word list ingestion + validator (two tiers: full dictionary for play, common-word subset for puzzle curation/par — see DECISIONS.md)
+- [x] Puzzle bank format + 15 hand-curated, solver-verified ladders to start
+- [x] Daily puzzle selection (local date → puzzle index)
+- [x] Par calculator (BFS shortest path between start/end over valid one-letter-swap words)
+- [x] Stats/streak update logic
+- [x] Share-card data model (pure data, no rendering)
+- [x] Unit tests for all of the above — 64 tests passing, `tsc --noEmit` clean
 
 ### Phase 2 — Visual direction
 - [ ] Propose visual direction (mood, type, color, motion feel) — **show John, wait for sign-off before building screens**
