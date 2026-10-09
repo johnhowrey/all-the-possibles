@@ -191,4 +191,116 @@ export const apps: AppInfo[] = [
       contact: "support@allthepossible.com",
     },
   },
+  {
+    id: "chain",
+    name: "Chain",
+    subtitle: "Habit Streaks",
+    tagline: "Add a habit. Mark it done each day. Watch the streak grow.",
+    description:
+      "Chain tracks one thing: whether you did your habit today, and how many days in a row you've kept it up. No journaling, no social feed, no coaching content — just the streak. No accounts, no ads, no subscription. Your first three habits are free; one small payment unlocks the rest for good.",
+    icon: "/chain-icon@2x.png",
+    accentColor: "#B5541A",
+    screenshots: ["/screenshots/chain-mark-it-done.png"],
+    features: [
+      "Add as many habits as you want once unlocked",
+      "One tap marks a habit done for the day",
+      "A grace period until midnight — one slow morning won't reset your streak",
+      "Works completely offline",
+      "One-time purchase — no subscription, ever",
+    ],
+    privacy: {
+      summary:
+        "Chain tracks habits. No accounts, no names, no emails. Your habit names and history never leave your device.",
+      sections: [
+        {
+          title: "What We Collect",
+          content:
+            "Chain doesn't ask for an account. The habits you add and the days you mark done stay on your device — they are never transmitted anywhere, not even anonymized. We collect anonymous usage events (for example, that a habit was added, not its name) and anonymous crash reports, tied only to a random per-device install ID, never to you.",
+        },
+        {
+          title: "Purchases",
+          content:
+            "The one-time unlock is handled by Apple or Google through their respective stores, and recorded by RevenueCat against an anonymous device identifier so it can restore correctly if you reinstall. We never see your payment details.",
+        },
+        {
+          title: "What We Don't Collect",
+          content:
+            "We do not collect your location, contacts, browsing history, or any habit name or completion history as identifiable content. We do not sell data to anyone, for any reason.",
+        },
+        {
+          title: "Your Choices",
+          content:
+            "Settings → Clear all habits & data deletes everything Chain has stored on your device immediately. Because there's no account, there's nothing on a server to delete — email support@allthepossible.com if you'd like your anonymous analytics or crash history cleared too.",
+        },
+        {
+          title: "Children",
+          content: "Chain is not directed at children under 13 and we do not knowingly collect information from them.",
+        },
+        {
+          title: "California and EU Residents",
+          content:
+            "Because no personal identity is collected, there's no personal information to sell, share, or request under CCPA, and no personal data subject to a GDPR access/erasure request beyond the anonymous device-level data covered above, which you can clear yourself in Settings.",
+        },
+        {
+          title: "Changes to This Policy",
+          content: "If this changes in any meaningful way, we'll update this page and the effective date above.",
+        },
+      ],
+      effectiveDate: "Not yet in effect",
+      contact: "support@allthepossible.com",
+    },
+    terms: {
+      summary: "Plain-language terms for using Chain. This is a draft pending a lawyer's review.",
+      sections: [
+        {
+          title: "The Short Version",
+          content:
+            "Chain is a habit-streak tracker. The free tier gives you three habits; after that, a one-time purchase unlocks unlimited habits on your device(s) under the same store account.",
+        },
+        {
+          title: "License",
+          content:
+            "We grant you a personal, non-transferable license to use Chain on devices you own or control, under the App Store's or Google Play's standard usage terms. You may not redistribute, decompile, or resell the app.",
+        },
+        {
+          title: "No Warranty",
+          content:
+            "Chain is provided \"as is,\" without warranty of any kind. It's a simple streak counter, not a medical, therapeutic, or coaching product, and makes no claims about health outcomes.",
+        },
+        {
+          title: "Purchases",
+          content:
+            "The unlock is a one-time, non-subscription purchase processed by Apple or Google. See the Refund Policy for how to request a refund.",
+        },
+        {
+          title: "Changes",
+          content: "We may update these terms as the app changes. Continued use after an update means you accept the new terms.",
+        },
+      ],
+      effectiveDate: "Not yet in effect",
+      contact: "support@allthepossible.com",
+    },
+    refundPolicy: {
+      summary: "Refunds for Chain's one-time unlock go through the store you bought it from, not us directly.",
+      sections: [
+        {
+          title: "App Store Purchases",
+          content:
+            "Apple handles all billing. Request a refund at reportaproblem.apple.com or via Settings → [your name] → Media & Purchases on your device.",
+        },
+        {
+          title: "Google Play Purchases",
+          content:
+            "Google handles all billing. Request a refund through the Google Play Store app (Order History) within Google's refund window, or at support.google.com/googleplay.",
+        },
+        {
+          title: "If Something's Broken",
+          content:
+            "If Chain isn't working as described, tell us first at support@allthepossible.com — we'd rather fix it or point you to a store refund than have you stuck with something that doesn't work.",
+        },
+      ],
+      effectiveDate: "Not yet in effect",
+      contact: "support@allthepossible.com",
+    },
+  },
 ];
