@@ -29,9 +29,9 @@ Free to try — your first three habits are on us. After that, one small one-tim
 
 **Category:** Health & Fitness (secondary: Productivity)
 
-**Support URL:** https://allthepossible.com/app/chain
-**Marketing URL:** https://allthepossible.com/app/chain
-**Privacy Policy URL:** https://allthepossible.com/app/chain#privacy
+**Support URL:** https://allthepossibles.com/app/chain
+**Marketing URL:** https://allthepossibles.com/app/chain
+**Privacy Policy URL:** https://allthepossibles.com/app/chain#privacy
 
 **Age rating:** 4+
 
@@ -71,6 +71,6 @@ Your first three habits are free. After that, a single one-time purchase removes
 
 **Content rating:** Everyone
 
-**Contact email:** support@allthepossible.com
+**Contact email:** support@allthepossibles.com
 
-**Privacy Policy URL:** https://allthepossible.com/app/chain#privacy
+**Privacy Policy URL:** https://allthepossibles.com/app/chain#privacy

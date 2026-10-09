@@ -147,14 +147,14 @@ export default function Paywall() {
           <AtpText
             variant="labelSmall"
             color="#6B6355"
-            onPress={() => Linking.openURL("https://allthepossible.com/app/window#privacy")}
+            onPress={() => Linking.openURL("https://allthepossibles.com/app/window#privacy")}
           >
             Privacy policy
           </AtpText>
           <AtpText
             variant="labelSmall"
             color="#6B6355"
-            onPress={() => Linking.openURL("https://allthepossible.com/app/window#terms")}
+            onPress={() => Linking.openURL("https://allthepossibles.com/app/window#terms")}
           >
             Terms
           </AtpText>

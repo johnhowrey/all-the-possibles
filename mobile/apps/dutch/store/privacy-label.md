@@ -50,7 +50,7 @@ Yes.
 in-app Settings screen's "Clear local data" removes on-device state
 (free-use counter, preferences) immediately. There is no server-side
 account to delete, since none exists. For the anonymized analytics/crash
-events already sent, users can email support@allthepossible.com to
+events already sent, users can email support@allthepossibles.com to
 request deletion from PostHog/Sentry.
 
 **Data collection is required or can users opt out?** Not currently

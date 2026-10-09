@@ -76,7 +76,7 @@ export const apps: AppInfo[] = [
         },
       ],
       effectiveDate: "March 18, 2026",
-      contact: "allthepossible.com",
+      contact: "allthepossibles.com",
     },
   },
   {
@@ -118,7 +118,7 @@ export const apps: AppInfo[] = [
         {
           title: "Your Choices",
           content:
-            "Settings → Clear local data resets everything Dutch has stored on your device immediately. Because there's no account, there's nothing on a server to delete — email support@allthepossible.com if you'd like your anonymous analytics or crash history cleared too.",
+            "Settings → Clear local data resets everything Dutch has stored on your device immediately. Because there's no account, there's nothing on a server to delete — email support@allthepossibles.com if you'd like your anonymous analytics or crash history cleared too.",
         },
         {
           title: "Children",
@@ -135,7 +135,7 @@ export const apps: AppInfo[] = [
         },
       ],
       effectiveDate: "Not yet in effect",
-      contact: "support@allthepossible.com",
+      contact: "support@allthepossibles.com",
     },
     terms: {
       summary: "Plain-language terms for using Dutch. This is a draft pending a lawyer's review.",
@@ -166,7 +166,7 @@ export const apps: AppInfo[] = [
         },
       ],
       effectiveDate: "Not yet in effect",
-      contact: "support@allthepossible.com",
+      contact: "support@allthepossibles.com",
     },
     refundPolicy: {
       summary: "Refunds for Dutch's one-time unlock go through the store you bought it from, not us directly.",
@@ -174,7 +174,7 @@ export const apps: AppInfo[] = [
         {
           title: "App Store Purchases",
           content:
-            "Apple handles all billing. Request a refund at reportaproblem.apple.com or via Settings → [your name] → Media & Purchases on your device. We cannot issue App Store refunds directly, but we're glad to help if something's wrong — email support@allthepossible.com.",
+            "Apple handles all billing. Request a refund at reportaproblem.apple.com or via Settings → [your name] → Media & Purchases on your device. We cannot issue App Store refunds directly, but we're glad to help if something's wrong — email support@allthepossibles.com.",
         },
         {
           title: "Google Play Purchases",
@@ -184,11 +184,11 @@ export const apps: AppInfo[] = [
         {
           title: "If Something's Broken",
           content:
-            "If Dutch isn't working as described, tell us first at support@allthepossible.com — we'd rather fix it or point you to a store refund than have you stuck with something that doesn't work.",
+            "If Dutch isn't working as described, tell us first at support@allthepossibles.com — we'd rather fix it or point you to a store refund than have you stuck with something that doesn't work.",
         },
       ],
       effectiveDate: "Not yet in effect",
-      contact: "support@allthepossible.com",
+      contact: "support@allthepossibles.com",
     },
   },
   {
@@ -230,7 +230,7 @@ export const apps: AppInfo[] = [
         {
           title: "Your Choices",
           content:
-            "Settings → Clear all habits & data deletes everything Chain has stored on your device immediately. Because there's no account, there's nothing on a server to delete — email support@allthepossible.com if you'd like your anonymous analytics or crash history cleared too.",
+            "Settings → Clear all habits & data deletes everything Chain has stored on your device immediately. Because there's no account, there's nothing on a server to delete — email support@allthepossibles.com if you'd like your anonymous analytics or crash history cleared too.",
         },
         {
           title: "Children",
@@ -247,7 +247,7 @@ export const apps: AppInfo[] = [
         },
       ],
       effectiveDate: "Not yet in effect",
-      contact: "support@allthepossible.com",
+      contact: "support@allthepossibles.com",
     },
     terms: {
       summary: "Plain-language terms for using Chain. This is a draft pending a lawyer's review.",
@@ -278,7 +278,7 @@ export const apps: AppInfo[] = [
         },
       ],
       effectiveDate: "Not yet in effect",
-      contact: "support@allthepossible.com",
+      contact: "support@allthepossibles.com",
     },
     refundPolicy: {
       summary: "Refunds for Chain's one-time unlock go through the store you bought it from, not us directly.",
@@ -296,11 +296,11 @@ export const apps: AppInfo[] = [
         {
           title: "If Something's Broken",
           content:
-            "If Chain isn't working as described, tell us first at support@allthepossible.com — we'd rather fix it or point you to a store refund than have you stuck with something that doesn't work.",
+            "If Chain isn't working as described, tell us first at support@allthepossibles.com — we'd rather fix it or point you to a store refund than have you stuck with something that doesn't work.",
         },
       ],
       effectiveDate: "Not yet in effect",
-      contact: "support@allthepossible.com",
+      contact: "support@allthepossibles.com",
     },
   },
   {
@@ -342,7 +342,7 @@ export const apps: AppInfo[] = [
         {
           title: "Your Choices",
           content:
-            "Settings → Clear fast history & data deletes everything Window has stored on your device immediately. Because there's no account, there's nothing on a server to delete — email support@allthepossible.com if you'd like your anonymous analytics or crash history cleared too.",
+            "Settings → Clear fast history & data deletes everything Window has stored on your device immediately. Because there's no account, there's nothing on a server to delete — email support@allthepossibles.com if you'd like your anonymous analytics or crash history cleared too.",
         },
         {
           title: "Children",
@@ -359,7 +359,7 @@ export const apps: AppInfo[] = [
         },
       ],
       effectiveDate: "Not yet in effect",
-      contact: "support@allthepossible.com",
+      contact: "support@allthepossibles.com",
     },
     terms: {
       summary: "Plain-language terms for using Window. This is a draft pending a lawyer's review.",
@@ -390,7 +390,7 @@ export const apps: AppInfo[] = [
         },
       ],
       effectiveDate: "Not yet in effect",
-      contact: "support@allthepossible.com",
+      contact: "support@allthepossibles.com",
     },
     refundPolicy: {
       summary: "Refunds for Window's one-time unlock go through the store you bought it from, not us directly.",
@@ -408,11 +408,11 @@ export const apps: AppInfo[] = [
         {
           title: "If Something's Broken",
           content:
-            "If Window isn't working as described, tell us first at support@allthepossible.com — we'd rather fix it or point you to a store refund than have you stuck with something that doesn't work.",
+            "If Window isn't working as described, tell us first at support@allthepossibles.com — we'd rather fix it or point you to a store refund than have you stuck with something that doesn't work.",
         },
       ],
       effectiveDate: "Not yet in effect",
-      contact: "support@allthepossible.com",
+      contact: "support@allthepossibles.com",
     },
   },
 ];

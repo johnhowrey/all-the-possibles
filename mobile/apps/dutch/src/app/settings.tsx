@@ -15,9 +15,9 @@ import { APP_ID } from "./_layout";
 
 const SUPPORT_INFO = {
   appName: "Dutch",
-  supportEmail: "support@allthepossible.com",
-  privacyPolicyUrl: "https://allthepossible.com/app/dutch#privacy",
-  termsUrl: "https://allthepossible.com/app/dutch#terms",
+  supportEmail: "support@allthepossibles.com",
+  privacyPolicyUrl: "https://allthepossibles.com/app/dutch#privacy",
+  termsUrl: "https://allthepossibles.com/app/dutch#terms",
 };
 
 export default function Settings() {
@@ -76,10 +76,10 @@ export default function Settings() {
         <AtpText
           variant="labelSmall"
           color="#6B6355"
-          onPress={() => Linking.openURL("https://allthepossible.com")}
+          onPress={() => Linking.openURL("https://allthepossibles.com")}
           style={{ marginTop: 2, textDecorationLine: "underline" }}
         >
-          allthepossible.com
+          allthepossibles.com
         </AtpText>
       </View>
 
