@@ -29,9 +29,9 @@ Free to try — your first three splits are on us. After that, one small one-tim
 
 **Category:** Utilities (secondary: Finance)
 
-**Support URL:** https://allthepossibles.com/app/dutch
-**Marketing URL:** https://allthepossibles.com/app/dutch
-**Privacy Policy URL:** https://allthepossibles.com/app/dutch#privacy
+**Support URL:** https://allthepossibles.com/support
+**Marketing URL:** https://allthepossibles.com/apps
+**Privacy Policy URL:** https://allthepossibles.com/privacy#apps
 
 **Age rating:** 4+ (no objectionable content; app does not reference alcohol, gambling, etc. itself — standard 4+ questionnaire answers all "No")
 
@@ -73,4 +73,4 @@ Your first three splits are free. After that, a single one-time purchase removes
 
 **Contact email:** support@allthepossibles.com
 
-**Privacy Policy URL:** https://allthepossibles.com/app/dutch#privacy
+**Privacy Policy URL:** https://allthepossibles.com/privacy#apps

@@ -16,8 +16,8 @@ import { APP_ID } from "./_layout";
 const SUPPORT_INFO = {
   appName: "Chain",
   supportEmail: "support@allthepossibles.com",
-  privacyPolicyUrl: "https://allthepossibles.com/app/chain#privacy",
-  termsUrl: "https://allthepossibles.com/app/chain#terms",
+  privacyPolicyUrl: "https://allthepossibles.com/privacy#apps",
+  termsUrl: "https://allthepossibles.com/terms#apps",
 };
 
 export default function Settings() {

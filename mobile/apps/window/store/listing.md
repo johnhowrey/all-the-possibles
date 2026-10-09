@@ -27,9 +27,9 @@ No diet plans, no articles, no calorie tracking, no community feed. If you alrea
 
 **Category:** Health & Fitness
 
-**Support URL:** https://allthepossibles.com/app/window
-**Marketing URL:** https://allthepossibles.com/app/window
-**Privacy Policy URL:** https://allthepossibles.com/app/window#privacy
+**Support URL:** https://allthepossibles.com/support
+**Marketing URL:** https://allthepossibles.com/apps
+**Privacy Policy URL:** https://allthepossibles.com/privacy#apps
 
 **Age rating:** 4+. Note for the App Review questionnaire: Window makes
 no medical claims and provides no dietary guidance — it is a plain
@@ -74,4 +74,4 @@ WHAT IT DOESN'T DO
 
 **Contact email:** support@allthepossibles.com
 
-**Privacy Policy URL:** https://allthepossibles.com/app/window#privacy
+**Privacy Policy URL:** https://allthepossibles.com/privacy#apps
