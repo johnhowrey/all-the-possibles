@@ -2,11 +2,16 @@
 
 ## Current state
 
-No app has shipped yet, so there's no production traffic, no scheduled
-jobs, and no backend to back up — every app's data lives on-device
-(AsyncStorage) plus whatever RevenueCat holds for entitlements. This file
-will grow real incident procedures once the first app is live; for now it
+Three apps are built (Dutch, Chain, Window) but none has been submitted
+to a store yet — no production traffic, no scheduled jobs, and no
+backend to back up. Every app's data lives on-device (AsyncStorage) plus
+whatever RevenueCat holds for entitlements. This file will grow real
+incident procedures once the first app is actually live; for now it
 records where to look and what "something broke" means at this stage.
+
+Entitlement IDs each app's RevenueCat offering needs, once that account
+exists: `dutch_unlimited`, `chain_unlimited`, `window_custom` (all
+one-time non-consumables, not subscriptions).
 
 ## Where to look
 

@@ -9,12 +9,19 @@ error logging), so a new app is mostly "write the one feature."
 ```
 mobile/
   packages/
-    ui/      @atp/ui   — design tokens + shared components (pending visual direction approval)
+    ui/      @atp/ui   — the "Paper Ledger" design system: tokens + components
     core/    @atp/core — onboarding, paywall, settings, analytics, storage, error logging
   apps/
-    _template/  reference app wired to both packages; copy this to start a new app
-    <app-name>/ one folder per shipped app
+    _template/  bare-bones reference app wired to both packages
+    dutch/      tip & bill split calculator
+    chain/      habit streak tracker
+    window/     fasting timer
 ```
+
+Each shipped app has a `store/` folder: `listing.md` (App Store + Play
+copy), `privacy-label.md` (privacy nutrition label / Data Safety form
+answers), and `screenshots/` (marketing screenshots, generated from a
+real render of the app, not mockups).
 
 It's an npm-workspaces monorepo, kept at `mobile/` inside the main
 `all-the-possibles` repo so it doesn't disturb the root-level marketing
@@ -53,16 +60,27 @@ or `eas build --profile development` once EAS is set up.
 
 ## Starting a new app
 
-1. Copy `mobile/apps/_template` to `mobile/apps/<new-app-name>`.
+Copy an existing app closer in shape to the new idea than `_template` is
+— `dutch` for a single-screen calculator-style app, `chain` for a
+list-of-things app, `window` for a timer/state-machine app — rather than
+starting from the bare template; you'll throw away less.
+
+1. `cp -r mobile/apps/dutch mobile/apps/<new-app-name>` (or `chain`/`window`).
 2. Rename it in `package.json` (`name`) and `app.json` (`name`, `slug`,
-   `scheme`).
-3. Change `APP_ID` in `src/app/_layout.tsx` and `src/app/index.tsx` to the
-   new app's id — it namespaces local storage and tags analytics/error
-   events, so it needs to be unique per app.
-4. From `mobile/`, run `npm install` again so the workspace picks up the
+   `scheme`), and regenerate its icon set (see `DECISIONS.md` for the
+   icon-generation approach: same ink-square-plus-notch motif, a new
+   letter and accent color).
+3. Change `APP_ID`, `ENTITLEMENT_ID`, and the accent color constant in
+   `src/app/_layout.tsx` — `APP_ID` namespaces local storage and tags
+   analytics/error events, so it must be unique per app.
+4. Delete the previous app's feature-specific files (e.g. `chain`'s
+   `habits.ts` and `add-habit.tsx`) and build the new one's.
+5. From `mobile/`, run `npm install` again so the workspace picks up the
    new app.
-5. Build the app's one feature; wire its RevenueCat entitlement id into
-   `usePaywallGate`.
+6. Write its `store/listing.md`, `store/privacy-label.md`, and marketing
+   screenshots; add it to `src/data/apps.ts` and extend `AppDetail.tsx`'s
+   rendering only if you've changed its shape (terms/refund sections are
+   already optional and handled).
 
 ## Checks
 

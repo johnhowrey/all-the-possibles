@@ -146,40 +146,50 @@ don't need them (code, design system, copy, research) in the meantime.
 ## 10. Phased task list
 
 ### Phase 0 — Plan & setup
-- [ ] Get your OK on this plan
-- [ ] Confirm `keys.txt` contents (or proceed without, per §7)
-- [ ] Set up `.env` handling + `.gitignore` entries for `mobile/`
+- [x] Get your OK on this plan
+- [ ] Confirm `keys.txt` contents (or proceed without, per §7) — still no
+  `keys.txt` in the repo; every third-party integration is coded to degrade
+  gracefully until one shows up (see §7 and `mobile/.env.example`)
+- [x] Set up `.env` handling + `.gitignore` entries for `mobile/`
 
 ### Phase 1 — Platform scaffold
-- [ ] `mobile/` npm-workspaces monorepo: `packages/ui`, `packages/core`, `apps/`
-- [ ] Design tokens (color, type, spacing) — visual direction proposed to you
-  first, per your designer note, before any screens are built
-- [ ] Shared onboarding flow component
-- [ ] Shared settings screen (restore purchase, manage subscription link,
-  support link, privacy/terms links, delete-my-data where relevant)
-- [ ] RevenueCat integration wrapper + paywall screen component
-- [ ] Analytics wrapper (PostHog) with the core funnel events
-- [ ] Error logging (Sentry) wired at the app shell level
-- [ ] Accessibility pass on shared components (WCAG 2.2 AA: contrast, touch
-  targets, labels, dynamic type)
+- [x] `mobile/` npm-workspaces monorepo: `packages/ui`, `packages/core`, `apps/`
+- [x] Design tokens (color, type, spacing) — visual direction proposed to you
+  first, per your designer note, before any screens are built (the "Paper
+  Ledger" direction, refined once per your "no AI slop" note)
+- [x] Shared onboarding flow component (per-app `onboarding.tsx` built on
+  shared `@atp/ui` pieces + `@atp/core`'s `useOnboardingGate`)
+- [x] Shared settings screen (restore purchase, support link, privacy/terms
+  links, local-data deletion — "manage subscription" link omitted since all
+  three shipped apps are one-time purchases, not subscriptions)
+- [x] RevenueCat integration wrapper + paywall screen component
+- [x] Analytics wrapper (PostHog) with the core funnel events
+- [x] Error logging (Sentry) wired at the app shell level
+- [x] Accessibility pass on shared components (real `<button>`/`Pressable`
+  everywhere, 44px touch targets, `accessibilityLabel`s, contrast-checked
+  palette — see `DECISIONS.md`)
 
 ### Phase 2 — App idea research
-- [ ] Research ten app ideas using App Store search-term signals and
+- [x] Research ten app ideas using App Store search-term signals and
   competitor review complaints as evidence
-- [ ] Present the ten with evidence and a recommendation; wait for your pick
+- [x] Present the ten with evidence and a recommendation; wait for your pick
+  — you asked for the top three built back to back instead of picking one
 
-### Phase 3 — First app build (once you've picked)
-- [ ] Scaffold the app inside `mobile/apps/<name>` on the shared platform
-- [ ] Build the one core feature, with every state covered (loading, empty,
-  error, success)
-- [ ] Wire its specific paywall product (one-time vs subscription) in
-  RevenueCat
-- [ ] Store listing copy (App Store + Play), screenshot designs, privacy
-  label answers
-- [ ] Privacy policy, terms, refund policy drafts (marked for lawyer review)
-  for the new app, following the Too Much pattern already in `src/data/apps.ts`
-- [ ] Add the new app to the studio landing page
-- [ ] README/RUNBOOK/CHANGELOG updates for the mobile monorepo
+### Phase 3 — First three apps (built back to back per your instruction)
+- [x] Scaffold each app inside `mobile/apps/<name>` on the shared platform
+  — **Dutch** (tip/bill split), **Chain** (habit streaks), **Window**
+  (fasting timer)
+- [x] Build each core feature, with every state covered (loading, empty,
+  error, success) — verified with real Playwright runs, not just lint/tsc
+- [x] Wire each paywall product in RevenueCat's client SDK (one-time unlock
+  for all three; actual products need to be created in the RevenueCat
+  dashboard once that account exists — see §11)
+- [x] Store listing copy (App Store + Play), screenshot designs, privacy
+  label answers — one `store/` folder per app
+- [x] Privacy policy, terms, refund policy drafts (marked for lawyer review)
+  for each app, following the Too Much pattern in `src/data/apps.ts`
+- [x] Add each app to the studio landing page
+- [x] README/RUNBOOK/CHANGELOG updates for the mobile monorepo
 
 ### Phase 4 — Go-to-market (for the first app)
 - [ ] Landing page section/page for the new app (who it's for, pricing, FAQ,
@@ -189,13 +199,21 @@ don't need them (code, design system, copy, research) in the meantime.
 - [ ] Launch checklist + three ad angle drafts (Meta Pixel setup waits for
   your explicit approval, per your standing instructions)
 
-## 11. What only you can do (flagging early)
+## 11. What only you can do
 
 - Create/own the Apple Developer, Google Play Console, RevenueCat, PostHog,
-  Sentry, and Expo/EAS accounts (I can do the in-app configuration once
-  credentials exist).
-- Approve the visual direction before I build real screens.
-- Pick the first app from the ten proposals.
+  Sentry, and Expo/EAS accounts, and drop the resulting keys in
+  `mobile/.env.example`'s real counterparts — nothing in Phase 3 is blocked
+  on this (every integration degrades gracefully without a key), but Phase 4
+  onward (real builds, submission) needs it.
+- Once a RevenueCat account exists: create the one-time-unlock product for
+  each app (`dutch_unlimited`, `chain_unlimited`, `window_custom` —
+  entitlement IDs the code already expects) and attach it to an offering.
 - Any actual store submission click (I'll prepare everything; the account
   owner has to submit).
+- A real trademark/name check on "Dutch," "Chain," and "Window" before
+  submission — I did a quick sanity pass (see `DECISIONS.md`) but that's not
+  a substitute for an actual search.
 - Approve Meta Pixel setup before it goes live.
+- Say go on Phase 4 (go-to-market: landing-page SEO basics, launch
+  checklist, three ad angles) — not started yet, see §10.
