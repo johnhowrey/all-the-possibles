@@ -303,4 +303,116 @@ export const apps: AppInfo[] = [
       contact: "support@allthepossible.com",
     },
   },
+  {
+    id: "window",
+    name: "Window",
+    subtitle: "Fasting Timer",
+    tagline: "Start your fast, watch the clock, end it when you're ready. Nothing else.",
+    description:
+      "Window times your fasting window. Pick 16:8, 18:6, or 20:4 — or unlock a custom length — and it counts up from zero until you end the fast. No diet plans, no articles, no calorie tracking. No accounts, no ads, no subscription. Presets are free forever; one small payment unlocks custom windows.",
+    icon: "/window-icon@2x.png",
+    accentColor: "#2F6F6B",
+    screenshots: ["/screenshots/window-just-a-timer.png"],
+    features: [
+      "16:8, 18:6, and 20:4 presets, free forever",
+      "Custom window lengths once unlocked",
+      "A live, running timer — no refreshing to check progress",
+      "Simple history: fasts completed, longest fast",
+      "One-time purchase — no subscription, ever",
+    ],
+    privacy: {
+      summary:
+        "Window times a fast. No accounts, no names, no emails. Your fast start and end times never leave your device.",
+      sections: [
+        {
+          title: "What We Collect",
+          content:
+            "Window doesn't ask for an account. The times you start and end a fast stay on your device — they are never transmitted anywhere, not even anonymized. We collect anonymous usage events (for example, that a fast was started, not when) and anonymous crash reports, tied only to a random per-device install ID, never to you.",
+        },
+        {
+          title: "Purchases",
+          content:
+            "The one-time unlock is handled by Apple or Google through their respective stores, and recorded by RevenueCat against an anonymous device identifier so it can restore correctly if you reinstall. We never see your payment details.",
+        },
+        {
+          title: "What We Don't Collect",
+          content:
+            "We do not collect your location, contacts, browsing history, or any fast timing as identifiable content. Window is a timer, not a health-tracking or medical product, and makes no claims about health outcomes. We do not sell data to anyone, for any reason.",
+        },
+        {
+          title: "Your Choices",
+          content:
+            "Settings → Clear fast history & data deletes everything Window has stored on your device immediately. Because there's no account, there's nothing on a server to delete — email support@allthepossible.com if you'd like your anonymous analytics or crash history cleared too.",
+        },
+        {
+          title: "Children",
+          content: "Window is not directed at children under 13 and we do not knowingly collect information from them.",
+        },
+        {
+          title: "California and EU Residents",
+          content:
+            "Because no personal identity is collected, there's no personal information to sell, share, or request under CCPA, and no personal data subject to a GDPR access/erasure request beyond the anonymous device-level data covered above, which you can clear yourself in Settings.",
+        },
+        {
+          title: "Changes to This Policy",
+          content: "If this changes in any meaningful way, we'll update this page and the effective date above.",
+        },
+      ],
+      effectiveDate: "Not yet in effect",
+      contact: "support@allthepossible.com",
+    },
+    terms: {
+      summary: "Plain-language terms for using Window. This is a draft pending a lawyer's review.",
+      sections: [
+        {
+          title: "The Short Version",
+          content:
+            "Window is a fasting timer. The free presets (16:8, 18:6, 20:4) work forever; a one-time purchase unlocks custom window lengths on your device(s) under the same store account.",
+        },
+        {
+          title: "License",
+          content:
+            "We grant you a personal, non-transferable license to use Window on devices you own or control, under the App Store's or Google Play's standard usage terms. You may not redistribute, decompile, or resell the app.",
+        },
+        {
+          title: "No Warranty, No Medical Advice",
+          content:
+            "Window is provided \"as is,\" without warranty of any kind. It is a plain timer — it provides no dietary, medical, or health advice. Talk to a doctor before starting any fasting routine, especially if you have a medical condition.",
+        },
+        {
+          title: "Purchases",
+          content:
+            "The unlock is a one-time, non-subscription purchase processed by Apple or Google. See the Refund Policy for how to request a refund.",
+        },
+        {
+          title: "Changes",
+          content: "We may update these terms as the app changes. Continued use after an update means you accept the new terms.",
+        },
+      ],
+      effectiveDate: "Not yet in effect",
+      contact: "support@allthepossible.com",
+    },
+    refundPolicy: {
+      summary: "Refunds for Window's one-time unlock go through the store you bought it from, not us directly.",
+      sections: [
+        {
+          title: "App Store Purchases",
+          content:
+            "Apple handles all billing. Request a refund at reportaproblem.apple.com or via Settings → [your name] → Media & Purchases on your device.",
+        },
+        {
+          title: "Google Play Purchases",
+          content:
+            "Google handles all billing. Request a refund through the Google Play Store app (Order History) within Google's refund window, or at support.google.com/googleplay.",
+        },
+        {
+          title: "If Something's Broken",
+          content:
+            "If Window isn't working as described, tell us first at support@allthepossible.com — we'd rather fix it or point you to a store refund than have you stuck with something that doesn't work.",
+        },
+      ],
+      effectiveDate: "Not yet in effect",
+      contact: "support@allthepossible.com",
+    },
+  },
 ];
