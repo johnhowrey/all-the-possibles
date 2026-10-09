@@ -3,6 +3,40 @@
 Sensible calls made without stopping to ask, per standing instructions.
 Reversible; revisit any of these if they stop making sense.
 
+## 2026-10-09 — Correction: this repo's website is not the real site
+
+Everything above and below this entry that references `allthepossible(s).com`
+as the live marketing site was wrong in an important way. The user caught
+it: this repo's root-level Vite/React site (the thing I'd been editing —
+`src/data/apps.ts`, `AppDetail.tsx`, the Dutch/Chain/Window entries, the
+domain-typo fix) isn't deployed anywhere real; it only ever had Vercel PR
+previews. The actual live `allthepossibles.com` is a separate repo,
+`johnhowrey/atp-studio` — a Cloudflare Worker + D1 site for a *developer*
+tools studio (Preflight, Design Check, Vantage, Bearing, Pulse, Design
+Intelligence), sharing its design system via a third repo, `atp-kit`.
+
+Asked the user how the three consumer apps should relate to that real,
+very differently-branded site. They said: add a section to atp-studio,
+keep it all under one brand/domain. Did that — see `johnhowrey/atp-studio`
+PR #24 (`/apps` page, a landing-page teaser, `/privacy`+`/terms`+`/support`
+subsections covering Dutch/Chain/Window) — and repointed all three apps'
+in-app links and store-listing copy at the real routes
+(`/privacy#apps`, `/terms#apps`, `/apps`, `/support`) instead of this
+repo's unused site.
+
+Left this repo's own Vite site untouched rather than deleting its now-
+redundant Dutch/Chain/Window entries — it's harmless sitting there unused,
+and removing content without being asked felt like the wrong call; flagged
+it to the user as something worth cleaning up or repurposing on their own
+schedule.
+
+Also found, while testing `atp-studio`'s new anchor links, a small
+pre-existing bug in the shared `atp-kit` library (anchored `h2`s land
+partly under the fixed header — no `scroll-margin-top`). Fix is a one-line,
+purely-additive CSS change, but `atp-kit` powers every other live product's
+pages too, which is out of scope for "add a section to atp-studio" — didn't
+push it, flagged it in the PR description instead.
+
 ## 2026-10-09 — Repo: extend, don't create a new one
 
 The task brief's generic setup instructions say to init a new repo and name
