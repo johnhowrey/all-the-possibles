@@ -1,0 +1,49 @@
+# Decisions Log
+
+Sensible calls made without stopping to ask, per standing instructions.
+Reversible; revisit any of these if they stop making sense.
+
+## 2026-10-09 — Repo: extend, don't create a new one
+
+The task brief's generic setup instructions say to init a new repo and name
+the project. But the branch I was pointed at (`claude/phone-app-platform-owzme1`)
+is already on `johnhowrey/all-the-possibles` — which is itself the "All the
+Possibles" app studio repo (marketing site + the "Too Much" app already
+live). Creating a second repo would split the studio across two places for
+no reason. Decision: build the mobile platform at `mobile/` inside this
+existing repo, keep the existing root-level Vite site untouched.
+
+## 2026-10-09 — Monorepo layout
+
+`mobile/` as an npm-workspaces monorepo: `packages/ui` (design system),
+`packages/core` (onboarding, paywall, settings, analytics, storage),
+`apps/<app-name>` per shipped app. Kept out of the repo root so the
+Vercel-deployed marketing site's build isn't affected.
+
+## 2026-10-09 — legacy-peer-deps for the mobile workspace
+
+`mobile/.npmrc` sets `legacy-peer-deps=true`. Without it, npm tries to
+auto-install every peerDependency across Expo/RevenueCat/PostHog/Sentry's
+overlapping React/React-DOM peer ranges and fails with an unresolvable
+conflict. This is the standard fix in Expo + npm-workspaces monorepos.
+
+## 2026-10-09 — ESLint pinned to 9.x in `apps/_template`
+
+`eslint-config-expo` currently pulls in `eslint-plugin-react`, which
+throws at runtime under ESLint 10 (`context.getFilename is not a
+function` — a known incompatibility, not a config mistake). Pinned
+`eslint` to `^9.39.0` instead of the newest 10.x until that plugin catches
+up.
+
+## 2026-10-09 — `api.expo.dev` and `reactnative.directory` unreachable in this container
+
+This environment's network policy only allows a specific host allowlist
+(confirmed via the agent proxy status endpoint), and Expo's own API host
+isn't on it. `expo install` and `expo export`/`start` make a telemetry/
+compat-check call there that fails loudly otherwise. Workaround:
+`EXPO_OFFLINE=1 EXPO_NO_TELEMETRY=1` env vars, and reading SDK-compatible
+package versions straight out of `node_modules/expo/bundledNativeModules.json`
+instead of letting `expo install` resolve them. Worth mentioning to the
+user if they want to lift that network restriction for smoother `expo`
+CLI use outside this session — otherwise these two env vars are now baked
+into the documented dev workflow.

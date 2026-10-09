@@ -12,6 +12,19 @@ dist
 dist-ssr
 *.local
 
+# Secrets — never commit
+keys.txt
+.env
+.env.*
+!.env.example
+
+# Expo / React Native (mobile/)
+.expo/
+expo-env.d.ts
+*.tsbuildinfo
+/ios
+/android
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
