@@ -1,0 +1,21 @@
+{
+  "name": "@atp/core",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "@react-native-async-storage/async-storage": "*",
+    "react-native-purchases": "*",
+    "posthog-react-native": "*",
+    "@sentry/react-native": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
